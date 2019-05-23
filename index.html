@@ -6,87 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <style>
-        body {
-            background-color: #fafafa;
-        }
-
-        ::selection {
-            background: #ff4400;
-            color: #fff;
-        }
-
-        ::-moz-selection {
-            background: #ff4400;
-            color: #fff;
-        }
-
-        p.selected-text::selection {
-            background: #ff4400;
-        }
-
-        label {
-            font-family: 'Open Sans', Sans;
-            font-weight: 100;
-            font-size: 36px;
-            color: #a0a0a0;
-        }
-
-        .container {
-            font-family: 'Open Sans', Sans;
-            font-weight: 100;
-            font-size: 18px;
-            color: #484850;
-            background: #fafafa;
-            width: 50%;
-            padding: 50px;
-            margin: 120px auto;
-        }
-
-        .caret {
-            border-style: solid;
-            border-width: 10px 10px 0px 10px;
-            border-bottom-color: transparent;
-            border-left-color: transparent;
-            border-top-color: rgba(0, 0, 0, .8);
-            border-right-color: transparent;
-            width: 0px;
-            height: 0px;
-            display: block;
-            position: absolute;
-            top: 60px;
-            left: 45%;
-        }
-
-        #highlight_menu {
-            font-family: 'Open Sans', Sans;
-            font-weight: 100;
-            font-size: 18px;
-            color: #fff;
-            border-radius: 5px;
-            background: rgba(0, 0, 0, .8);
-            position: absolute;
-            user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .highlight_menu_animate {
-            transition: top 75ms ease-out, left 75ms ease-out;
-        }
-
-        .social-share {
-            width: 100%;
-            padding: 0;
-            margin: 10px;
-            margin-top: 14px;
-        }
-
-        .social-share li {
-            display: inline;
-            padding: 10px;
-        }
-    </style>
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -175,12 +95,6 @@
             $('#highlight_menu').hide();
             $('#selected-text').html(getSelected());
         });
-
-        $('body').click(function () {
-            console.log("No click");
-            return false;
-        });
-
 
     });
 
